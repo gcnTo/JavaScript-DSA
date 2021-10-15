@@ -3,11 +3,11 @@ function doesArraysContainSameElement(arr1,arr2){
   dictionary = {};
   //Turns arr1 into a hashtable(dictionary)
   for (let i=0; i < arr1.length; i++){
-    list[arr1[i]] = true;
+    dictionary[arr1[i]] = true;
   }
   //Checks if any item in arr2 is also in the dictionary
   for (let j=0; j < arr2.length; j++){
-    if (list[arr2[j]] === true){
+    if (dictionary[arr2[j]] === true){
       return true;
     }
   }
